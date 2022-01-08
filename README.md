@@ -1,1 +1,1 @@
-lesson-1:null & undefined
+lesson-2:函数作用域和块级作用域的区别
