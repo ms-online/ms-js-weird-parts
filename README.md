@@ -1,1 +1,1 @@
-lesson-5:Infinity和-Infinity
+lesson-6:关于NaN
