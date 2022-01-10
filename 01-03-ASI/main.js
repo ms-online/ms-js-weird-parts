@@ -6,13 +6,12 @@
 // 2
 // console.log(sum)
 
-
-function test (){
-    return
-    {
-        age:27
-    }
+function test() {
+  return;
+  {
+    age: 27;
+  }
 }
 
 const obj = test();
-console.log(obj) // undefined
+console.log(obj); // undefined
