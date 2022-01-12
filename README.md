@@ -1,1 +1,1 @@
-lesson-9:sum(5)(6)-函数柯里化
+lesson-10:迭代器iterator和可迭代对象iterable
