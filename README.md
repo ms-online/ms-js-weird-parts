@@ -1,1 +1,1 @@
-lesson-23:类，类表达式和静态成员
+lesson-24：call&apply&bind
