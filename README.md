@@ -1,1 +1,1 @@
-lesson-24：call&apply&bind
+lesson-25:继承、子类化和扩展内置类
