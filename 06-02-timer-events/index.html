@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 的疑难杂症</title>
+  </head>
+  <body>
+    <h1>提问:如何处理基于定时器的事件?</h1>
+    <h2 id="txt">暂停中...</h2>
+    <button onclick="tryTimer()">启动定时器</button>
+    <button onclick="stopTimer()">暂停定时器</button>
+    <script >
+      let count = 0;
+      let tObj;
+      function tryTimer() {
+        // setTimeout(()=>{
+        //   document.getElementById("txt").innerHTML = "已启动..."
+        // }, 2000);
+
+        tObj = setInterval(()=>{
+          document.getElementById("txt").innerHTML = new Date();
+
+        }, 1000);
+      }
+      function stopTimer(){
+        clearInterval(tObj)
+      }
+    </script>
+  </body>
+</html
