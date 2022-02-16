@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 的疑难杂症</title>
+    <style>
+      table {
+        width: 50%;
+
+        border: 1px solid darkslategray;
+        text-align: center;
+        padding: 5px;
+        margin: auto;
+      }
+      td {
+        border: 1px solid darkgray;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table onclick="mainClick()">
+      <tr>
+        <th>编号</th>
+        <th>产品</th>
+        <th>价格</th>
+      </tr>
+      <tr>
+        <td>1001</td>
+        <td>苹果</td>
+        <td>¥10</td>
+      </tr>
+      <tr>
+        <td>1002</td>
+        <td>橙子</td>
+        <td>¥15</td>
+      </tr>
+      <tr>
+        <td>1003</td>
+        <td>香蕉</td>
+        <td><input type="text" /></td>
+      </tr>
+    </table>
+    <script>
+      // function mainClick() {
+      //   console.log(event.target);
+      //   console.log(event.target.tagName);
+      //   console.log(event.target.innerHTML);
+      //   console.log(event.target.value);
+      // }
+      function mainClick() {
+        if (event.target.tagName === 'TD') {
+          console.log(event.target.innerHTML);
+        } else {
+          console.log(event.target.value);
+        }
+      }
+    </script>
+  </body>
+</html>
