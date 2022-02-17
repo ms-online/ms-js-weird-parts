@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 的疑难杂症</title>
+    <style>
+      input {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" oninput="search()" />
+    <h2 id="kC">键盘计次:0</h2>
+    <h2 id="aC">API计次:0</h2>
+    <script>
+      let keyCount = 0;
+      let APICount = 0;
+      let dTimer;
+      function search() {
+        keyCount++;
+        clearTimeout(dTimer);
+        dTimer = setTimeout(function () {
+          APICount++;
+        }, 200);
+        document.getElementById('kC').innerHTML = '键盘计次:' + keyCount;
+        document.getElementById('aC').innerHTML = 'API计次:' + APICount;
+      }
+    </script>
+  </body>
+</html>
