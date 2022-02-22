@@ -1,1 +1,1 @@
-lesson-41:什么是promise
+lesson-42:all（）&allSettled（）&race（）
