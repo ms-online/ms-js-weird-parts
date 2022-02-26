@@ -1,1 +1,1 @@
-lesson-46:WeakSet & WeakMap
+lesson-47:什么是调试(debugging)并介绍开发者工具的功能
