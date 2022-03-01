@@ -1,1 +1,1 @@
-lesson-55:console对象及方法
+lesson-56:console时间相关方法
