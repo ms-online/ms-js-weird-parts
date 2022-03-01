@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHR/Fetch断点</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+      }
+      #main {
+        width: 600px;
+        height: 250px;
+        border: 3px solid black;
+        padding: 20px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      input {
+        width: 300px;
+        height: 10px;
+        padding: 10px;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        padding: 5px;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h3>XHR/Fetch断点</h3>
+      <div>
+        <input type="url" id="url" placeholder="请输入URL" />
+        <button id="btn" onclick="fetchURL()">请求链接</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
