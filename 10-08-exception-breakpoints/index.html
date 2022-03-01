@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>异常断点</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 200px;
+        height: 350px;
+        border: 3px solid black;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      input,
+      button {
+        min-width: 72px;
+        min-height: 36px;
+        border: 1px solid grey;
+      }
+      label,
+      input,
+      button {
+        display: block;
+      }
+      input {
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>异常断点</h1>
+      <label for="num1">数字 1</label>
+      <input placeholder="Number 1" id="n1" />
+      <label for="num2">数字 2</label>
+      <input placeholder="Number 2" id="n2" />
+      <button onclick="sum()">数字1+数字2</button>
+      <p></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
