@@ -4,27 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>JavaScript 的疑难杂症</title>
+    <title>JS调试</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      input,
+      button {
+        min-width: 72px;
+        min-height: 36px;
+        border: 1px solid grey;
+      }
+      label,
+      input,
+      button {
+        display: block;
+      }
+      input {
+        margin-bottom: 1em;
+      }
+    </style>
   </head>
   <body>
-    <h2 >JS 调试工具</h2>
     <div class="container">
-      <div class="myForm">
-        <div class="form-field">
-          <label for="Num 1" class="label">Num 1:</label>
-          <input type="text" id="n1" class="input-text">
-        </div>
-         <div class="form-field">
-          <label for="Num 2" class="label">Num 2:</label>
-          <input type="text" id="n2" class="input-text">
-        </div>
-         <div class="form-field">
-         <input type="submit" class="submit-btn" onclick="sum()" value="加法运算">
-        </div>
-      </div>
+      <h1>使用谷歌开发者工具进行JS代码调试</h1>
+      <label for="num1">数字 1</label>
+      <input placeholder="Number 1" id="num1" />
+      <label for="num2">数字 2</label>
+      <input placeholder="Number 2" id="num2" />
+      <button>数字1+数字2</button>
+      <p></p>
     </div>
-    <div id="output"></div>
     <script src="main.js"></script>
   </body>
-</html
+</html>
